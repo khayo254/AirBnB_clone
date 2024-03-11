@@ -74,7 +74,11 @@ class HBNBCommand(cmd.Cmd):
                 if pline:
                     # check for *args or **kwargs
                     if pline[0] == '{' and pline[-1] =='}'\
+<<<<<<< HEAD
                             and type(eval(pline)) == dict:
+=======
+                            and type(eval(pline)) is dict:
+>>>>>>> origin
                         _args = pline
                     else:
                         _args = pline.replace(',', '')
